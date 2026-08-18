@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book</title>
+</head>
+<body>
+
+    <h2 id="bookSummary"></h2>
+
+    <script>
+        const book = {
+            title: "The Alchemist",
+            author: "Paulo Coelho",
+            year: 1988,
+
+            getSummary: function () {
+                return `The book '${this.title}' was written by ${this.author} in ${this.year}.`;
+            }
+        };
+
+        function printBookSummary(bookObj) {
+            document.getElementById("bookSummary").innerHTML = bookObj.getSummary();
+        }
+
+        printBookSummary(book);
+    </script>
+
+</body>
+</html>
