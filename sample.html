@@ -1,17 +1,32 @@
-
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Random Quote</title>
+</head>
+
 <body>
 
+    <h2 id="quote"></h2>
 
-<script>
-sentence_1 =`Welcome to mashup stack`// Back ticks
-sentence_2 ="Welcome to mashup stack"// Double quotes
-sentence_3 ='Welcome to mashup stack'// Single quotes
-</script>
+    <button onclick="showQuote()">New Quote</button>
 
+    <script>
+        let quotes = [
+            "Believe in yourself.",
+            "Never give up.",
+            "Dream big and work hard.",
+            "Success comes with patience.",
+            "Every day is a new beginning."
+        ];
 
+        function showQuote() {
+            let randomIndex = Math.floor(Math.random() * quotes.length);
 
-var x = "Now youre " \n \t\t"studying in Mashup stack site.";
+            document.getElementById("quote").innerHTML = quotes[randomIndex];
+        }
+
+        showQuote();
+    </script>
+
 </body>
 </html>
