@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Result Generator</title>
+</head>
+<body>
+    <script>
+        let mysteryLevel = Math.floor(Math.random() * 50) +1;
+        let userScore = "45";
+        let score = Number(userScore);
+        let difference  = Math.abs(mysteryLevel - score);
+        
+        console.log(difference)
+        console.log(Math.sqrt(score));
+        console.log(Math.PI);
+
+        let result = "20" * 5;
+        let highest = Math.max(10, 20, mysteryLevel);
+        let lowest = Math.min(10, 20, mysteryLevel);
+        
+        console.log(result);
+        console.log(highest);
+        console.log(lowest);
+        
+    </script>
+</body>
+</html>
